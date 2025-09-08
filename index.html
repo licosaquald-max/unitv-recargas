@@ -27,13 +27,21 @@
       text-align: center;
       padding: 10px;
     }
-    nav a {
-      color: white;
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    nav ul li {
+      display: inline;
       margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
+    nav ul li a:hover {
       text-decoration: underline;
     }
     section {
@@ -49,11 +57,26 @@
       margin-bottom: 15px;
     }
     footer {
-      background: #ff7a00;
+      background-color: #ff7a00;
       color: white;
       text-align: center;
       padding: 15px;
       margin-top: 20px;
+    }
+    /* Botão WhatsApp */
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe5a;
     }
   </style>
 </head>
@@ -64,32 +87,41 @@
   </header>
 
   <nav>
-    <a href="#planos">Planos</a>
-    <a href="#opiniao">Opiniões</a>
-    <a href="#contato">Contato</a>
+    <ul>
+      <li><a href="#planos">Planos</a></li>
+      <li><a href="#opiniao">Opiniões</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
   </nav>
 
   <section id="planos">
     <h2>📺 Planos Disponíveis</h2>
-    <div class="card">Plano Mensal - R$ 25,00</div>
-    <div class="card">Plano Trimestral - R$ 70,00</div>
-    <div class="card">Plano Semestral - R$ 135,00</div>
+    <div class="card">
+      <p><strong>Básico:</strong> A partir de R$25,00</p>
+    </div>
+    <div class="card">
+      <p><strong>Premium:</strong> Todos os canais + filmes liberados</p>
+    </div>
   </section>
 
   <section id="opiniao">
-    <h2>⭐ Opiniões de Clientes</h2>
-    <div class="card">"Muito bom, nunca trava!" – João</div>
-    <div class="card">"Atendimento rápido e confiável." – Maria</div>
-    <div class="card">"Preço justo e ótima qualidade." – Pedro</div>
+    <h2>⭐ Opiniões dos Clientes</h2>
+    <div class="card">
+      <p>"Muito fácil e rápido, recomendo!"</p>
+    </div>
+    <div class="card">
+      <p>"Melhor IPTV que já usei."</p>
+    </div>
   </section>
 
   <section id="contato">
-    <h2>📞 Entre em Contato</h2>
-    <p>WhatsApp: <strong>(22) 99929-1708</strong></p>
+    <h2>📞 Fale Conosco</h2>
+    <p>Tem alguma dúvida? Fale diretamente no WhatsApp:</p>
+    <a class="whatsapp-btn" href="https://wa.me/5522999291708" target="_blank">💬 Falar no WhatsApp</a>
   </section>
 
   <footer>
-    <p>© 2025 UniTV Recargas - Todos os direitos reservados</p>
+    <p>&copy; 2025 UniTV Recargas - Todos os direitos reservados</p>
   </footer>
 </body>
 </html>
