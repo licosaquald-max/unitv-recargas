@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,59 +8,91 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background: #fdf2e9;
-      color: #333;
       margin: 0;
+      padding: 0;
+      background-color: #fff5f5;
+      color: #333;
     }
     header {
-      background: #ff6600;
-      color: white;
+      background: url('banner.jpg') no-repeat center center;
+      background-size: cover;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+      max-height: 80px;
+    }
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 28px;
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+    header p {
+      color: #f1f1f1;
+      margin: 5px 0 0;
+      font-size: 18px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: center;
       padding: 20px;
     }
-    h1 {
-      margin: 0;
+    h2 {
+      color: #d90429;
     }
     table {
-      margin: 20px auto;
+      width: 100%;
       border-collapse: collapse;
-      width: 80%;
-      max-width: 500px;
+      margin: 20px 0;
     }
     table, th, td {
-      border: 1px solid #ff6600;
-    }
-    td {
-      padding: 12px;
-      text-align: center;
+      border: 2px solid #d90429;
     }
     th {
-      background: #ff6600;
+      background-color: #d90429;
       color: white;
+      padding: 10px;
     }
-    a.whatsapp-btn {
+    td {
+      padding: 10px;
+      background-color: #fff;
+    }
+    .whatsapp-btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #25d366;
-      color: white;
-      text-decoration: none;
+      padding: 15px 25px;
+      background-color: #25d366;
+      color: #fff;
       font-size: 18px;
       border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
     }
-    a.whatsapp-btn:hover {
-      background: #1ebe57;
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+    footer {
+      background-color: #d90429;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
+
   <header>
+    <img src="logo.png" alt="Logo UniTV">
     <h1>UniTV Recargas</h1>
-    <p>Seu acesso é rápido e fácil!</p>
+    <p>Seu acesso rápido e fácil!</p>
   </header>
 
-  <main>
-    <h2>Tabela de Recargas</h2>
+  <div class="container">
+    <h2>Tabela de Planos</h2>
     <table>
       <tr>
         <th>Plano</th>
@@ -79,9 +112,14 @@
       </tr>
     </table>
 
-    <a href="https://wa.me/5522999291708" target="_blank" class="whatsapp-btn">
-      Chamar no WhatsApp
+    <a class="whatsapp-btn" href="https://wa.me/5522999291708" target="_blank">
+      💬 Chamar no WhatsApp
     </a>
-  </main>
+  </div>
+
+  <footer>
+    <p>© 2025 UniTV Recargas - Todos os direitos reservados</p>
+  </footer>
+
 </body>
 </html>
