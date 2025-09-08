@@ -1,195 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UniTV Recargas</title>
+  <title>UniTV Recargas - Início</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #b30000, #ff4d4d);
-      text-align: center;
-      color: #fff;
-    }
-
-    header {
-      padding: 20px;
-    }
-
-    header img {
-      width: 120px;
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 26px;
-    }
-
-    .planos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .card {
       background: #fff;
-      color: #222;
-      border-radius: 15px;
-      padding: 20px;
-      width: 280px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-      position: relative;
-      transition: transform 0.3s;
+      color: #333;
+      text-align: center;
     }
-
-    .card:hover {
-      transform: scale(1.05);
+    header {
+      background: #d32f2f;
+      padding: 15px;
     }
-
-    .selo {
-      position: absolute;
-      top: -12px;
-      right: -12px;
-      background: gold;
-      color: #b30000;
-      font-size: 12px;
-      font-weight: bold;
-      padding: 6px 10px;
-      border-radius: 50px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    header img {
+      max-width: 180px;
     }
-
-    .preco {
-      font-size: 28px;
-      font-weight: bold;
-      margin: 10px 0;
-      color: #b30000;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #b30000;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
+    nav {
       margin-top: 10px;
     }
-
-    .btn:hover {
-      background: #ff0000;
-    }
-
-    /* Formas de Pagamento */
-    .pagamento {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 30px 20px;
-      margin: 30px 0 60px;
-      border-radius: 15px;
-    }
-
-    .pagamento h2 {
-      margin-bottom: 20px;
-      font-size: 22px;
-      color: #fff;
-    }
-
-    .icones {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .icone {
-      background: #fff;
-      color: #b30000;
-      font-weight: bold;
-      padding: 15px 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      font-size: 16px;
-    }
-
-    .pix {
-      border: 2px solid #00cc66;
-      color: #00cc66;
-    }
-
-    /* Botão WhatsApp fixo */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 28px;
+    nav a {
       color: white;
       text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 999;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    main {
+      padding: 40px 20px;
+    }
+    h1 {
+      color: #d32f2f;
+      font-size: 2.5em;
+    }
+    footer {
+      background: #d32f2f;
+      color: white;
+      padding: 10px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <!-- LOGO CENTRALIZADO -->
-    <img src="logo.png" alt="UniTV Logo">
-    <h1>Recargas UniTV</h1>
-    <p>Ative sua TV em segundos!</p>
+    <img src="logo.png" alt="Logo UniTV">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="planos.html">Planos</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </header>
 
-  <section class="planos">
+  <main>
+    <h1>Bem-vindo à UniTV Recargas</h1>
+    <p>Assista seus canais favoritos com qualidade!</p>
+    <h2>Planos a partir de <strong>R$25</strong></h2>
+  </main>
 
-    <!-- Plano Mensal -->
-    <div class="card">
-      <div class="selo">Acesso imediato</div>
-      <h2>Plano Mensal</h2>
-      <p class="preco">R$ 25,00</p>
-      <a href="https://wa.me/5522992844880?text=Ol%C3%A1,+quero+assinar+o+plano+Mensal+UniTV+por+R$25" class="btn">COMPRAR AGORA</a>
-    </div>
-
-    <!-- Plano Trimestral -->
-    <div class="card">
-      <div class="selo">Mais vendido</div>
-      <h2>Plano Trimestral</h2>
-      <p class="preco">R$ 65,00</p>
-      <a href="https://wa.me/5522992844880?text=Ol%C3%A1,+quero+assinar+o+plano+Trimestral+UniTV+por+R$65" class="btn">COMPRAR AGORA</a>
-    </div>
-
-    <!-- Plano Semestral -->
-    <div class="card">
-      <div class="selo">Melhor custo-benefício</div>
-      <h2>Plano Semestral</h2>
-      <p class="preco">R$ 120,00</p>
-      <a href="https://wa.me/5522992844880?text=Ol%C3%A1,+quero+assinar+o+plano+Semestral+UniTV+por+R$120" class="btn">COMPRAR AGORA</a>
-    </div>
-
-  </section>
-
-  <!-- Formas de Pagamento -->
-  <section class="pagamento">
-    <h2>Formas de Pagamento</h2>
-    <div class="icones">
-      <div class="icone pix">PIX: ldcellsaqua@gmail.com</div>
-    </div>
-  </section>
-
-  <!-- Botão flutuante WhatsApp -->
-  <a href="https://wa.me/5522992844880" class="whatsapp-float">💬</a>
-
+  <footer>
+    <p>© 2025 UniTV Recargas - Todos os direitos reservados</p>
+  </footer>
 </body>
 </html>
