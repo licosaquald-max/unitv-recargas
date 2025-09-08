@@ -10,144 +10,132 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background: #fff;
       text-align: center;
-      background: linear-gradient(135deg, #8b0000, #ff0000);
-      color: #333;
+      color: #222;
     }
 
     header {
-      padding: 20px;
+      background: #b30000;
+      padding: 15px;
+      color: white;
     }
 
     header img {
-      width: 100px;
+      width: 90px;
       margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 26px;
-      color: white;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+      margin: 0;
+      font-size: 22px;
     }
 
     .planos {
-      margin: 20px auto;
-      max-width: 400px;
-      background: #fff;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      overflow: hidden;
+      padding: 20px;
     }
 
-    .planos h2 {
-      background: #b30000;
-      color: white;
-      padding: 12px;
-      margin: 0;
-      font-size: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    table th, table td {
-      padding: 12px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .contato {
-      margin: 20px auto;
-      max-width: 400px;
-      padding: 15px;
-      background: #fff;
+    .card {
+      border: 1px solid #ddd;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      text-align: left;
-    }
-
-    .contato p {
-      margin: 8px 0;
-      font-size: 15px;
-    }
-
-    .contato span {
-      font-weight: bold;
-      color: #b30000;
-    }
-
-    footer {
-      margin-top: 20px;
       padding: 15px;
-      background: #b30000;
-      color: white;
+      margin: 15px auto;
+      max-width: 350px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: white;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .preco-antigo {
+      text-decoration: line-through;
+      color: #777;
       font-size: 14px;
     }
 
-    /* Botão flutuante WhatsApp */
+    .desconto {
+      color: #b30000;
+      font-weight: bold;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+
+    .preco {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #b30000;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Botão WhatsApp fixo */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
       right: 20px;
       background: #25D366;
-      color: white;
       border-radius: 50%;
       width: 60px;
       height: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 30px;
+      font-size: 28px;
+      color: white;
       text-decoration: none;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 1000;
+      z-index: 999;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.png" alt="Logo UniTV">
-    <h1>UniTV Recargas</h1>
-    <p style="color: #fff;">Seu acesso rápido e fácil!</p>
+    <img src="logo.png" alt="UniTV Logo">
+    <h1>Recargas UniTV</h1>
+    <p>Ativação imediata após pagamento</p>
   </header>
 
   <section class="planos">
-    <h2>📋 Tabela de Planos</h2>
-    <table>
-      <tr>
-        <th>Plano</th>
-        <th>Preço</th>
-      </tr>
-      <tr>
-        <td>Mensal</td>
-        <td>R$ 25</td>
-      </tr>
-      <tr>
-        <td>Trimestral</td>
-        <td>R$ 65</td>
-      </tr>
-      <tr>
-        <td>Semestral</td>
-        <td>R$ 120</td>
-      </tr>
-    </table>
+
+    <!-- Plano Mensal -->
+    <div class="card">
+      <img src="mensal.png" alt="Plano Mensal">
+      <p class="preco-antigo">R$ 28,00 <span class="desconto">-15.4%</span></p>
+      <p class="preco">R$ 24,90</p>
+      <a href="#" class="btn">COMPRAR AGORA</a>
+    </div>
+
+    <!-- Plano Trimestral -->
+    <div class="card">
+      <img src="trimestral.png" alt="Plano Trimestral">
+      <p class="preco-antigo">R$ 75,00 <span class="desconto">-6.83%</span></p>
+      <p class="preco">R$ 59,90</p>
+      <a href="#" class="btn">COMPRAR AGORA</a>
+    </div>
+
+    <!-- Plano Anual -->
+    <div class="card">
+      <img src="anual.png" alt="Plano Anual">
+      <p class="preco-antigo">R$ 190,00 <span class="desconto">-6.73%</span></p>
+      <p class="preco">R$ 169,90</p>
+      <a href="#" class="btn">COMPRAR AGORA</a>
+    </div>
+
   </section>
 
-  <section class="contato">
-    <p><span>📞 WhatsApp:</span> +55 22 99284-4880</p>
-    <p><span>📧 E-mail:</span> ldcellsaqua@gmail.com</p>
-    <p><span>🔑 Chave PIX:</span> ldcellsaqua@gmail.com</p>
-  </section>
+  <a href="https://wa.me/5522992844880" class="whatsapp-float">💬</a>
 
-  <a href="https://wa.me/5522992844880" class="whatsapp-float" target="_blank">💬</a>
-
-  <footer>
-    © 2025 UniTV Recargas - Todos os direitos reservados
-  </footer>
 </body>
 </html>
